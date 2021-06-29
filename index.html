@@ -1,0 +1,285 @@
+
+<!-- https://github.com/pages-themes/cayman/blob/master/_layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+
+  <title>BravoTran Coding Challenge</title>
+  <meta name="generator" content="Jekyll v3.9.0" />
+  <meta property="og:title" content="BravoTran Coding Challenge" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="Development blog" />
+  <meta property="og:description" content="Development blog" />
+  <link rel="canonical" href="https://engineering.bravotran.com/challenge.html" />
+  <meta property="og:url" content="https://engineering.bravotran.com/challenge.html" />
+  <meta property="og:site_name" content="The BravoTran Coding Challenge" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="BravoTran Coding Challenge" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+      pre.quote {
+          white-space: pre-wrap;
+          background-color: white;
+          border-color: rgb(208, 208, 208);
+          border-radius: 4px;
+      }
+      body {
+          background-image: -webkit-linear-gradient(top, rgb(223, 237, 246), rgb(238, 242, 245));
+          color: rgb(68, 68, 68);
+          font-family: "Proxima Nova", Avenir, "Helvetica Neue", Arial, sans-serif;
+      }
+      header.page-header {
+          background: white;
+          padding: 0 0 0 2em;
+          text-align: left;
+          border-bottom: 2px solid #5c5f63;
+      }
+
+      header.page-header h1 {
+          font-weight: normal;
+          font-size: 2.25rem;
+      }
+      .page-header__container {
+          max-width: 64rem;
+          margin: 0 auto;
+          position: relative;
+      }
+      header.page-header a{
+          color: #5c5f63;
+          text-decoration: none;
+      }
+      a {
+          color: rgb(7, 136, 209);
+      }
+
+      #logo {
+          height: 30px;
+          width: 139px;
+      }
+
+      .main-content h1,
+      .main-content h2,
+      .main-content h3,
+      .main-content h4,
+      .main-content h5,
+      .main-content h6 {
+          color: #14a5f8;
+      }
+
+      .card .post-header {
+          line-height: 1.5em;
+      }
+      .post-header__image{
+          width: 50px;
+          float: left;
+          margin-right: 1em;
+      }
+      .post-header__image img {
+          border-radius: 25px;
+      }
+      .post-header__title {
+          font-weight: bold;
+      }
+
+      .ht-main-content {
+          clear: both;
+      }
+      .post-header {
+          margin-bottom: 2em;
+      }
+
+      .blog-post__title {
+          font-weight: bold;
+          font-size: 2em;
+          margin-bottom: 0.5em;
+      }
+      .blog-post__title a {
+          color: black;
+      }
+
+      .blog-post__excerpt {
+          font-size: smaller;
+          margin-bottom: 1em;
+          color: rgb(146, 148, 147);
+      }
+
+      .blog-post {
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+          border-bottom: 1px solid rgb(146, 148, 147);;
+      }
+      .blog-post__author-name {
+          color: rgb(20, 165, 247);;
+          font-weight: bold;
+
+      }
+      .box-callout {
+          padding: 1em;
+      }
+
+      .box-right {
+          width: 50%;
+          padding: 2em 0 2em 2em;
+          float: left;
+
+      }
+
+      .header-graphic {
+          position: relative;
+      }
+
+      .header-graphic h1 {
+          position: absolute;
+          top: -1em;
+          width: 70%;
+          margin-left: 15%;
+          text-align: center;
+          color: white;
+          font-size: 1.75rem;
+      }
+
+      .header-graphic h2 {
+          color: #0c5f8f;
+          text-align: center;
+          top: 4em;
+          position: absolute;
+          width: 70%;
+          font-size: 1.25rem;
+          margin-left: 15%;
+      }
+
+      .header-graphic img {
+          width: 120%;
+          margin-left: -10%;
+          margin-top: -33px !important;
+          max-width: initial;
+      }
+
+      .card {
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 0 4px 2px rgba(84,121,153,0.1);
+          padding: 30px 30px 30px 30px;
+          line-height: 2em;
+      }
+
+
+      .card li {
+          margin-bottom: 0.5em;
+      }
+
+      .header__subnav {
+          float: right;
+          margin-right: 6em;
+          position: absolute;
+          right: 1em;
+          bottom: 5px;
+      }
+      .header__subnav a{
+          padding-left: 1em;
+          display: inline-block;
+      }
+      .header__subnav a:hover{
+          text-decoration: underline;
+      }
+      .blog--container img:first-child {
+          display: none;
+      }
+
+      .ui-button.green {
+          background-color: #82b34e;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#a3cf62), to(#82b34e));
+          background-image: -webkit-linear-gradient(top, #a3cf62, #82b34e);
+          background-image: -moz-linear-gradient(top, #a3cf62, #82b34e);
+          background-image: -ms-linear-gradient(top, #a3cf62, #82b34e);
+          background-image: -o-linear-gradient(top, #a3cf62, #82b34e);
+          background-image: linear-gradient(top, #a3cf62, #82b34e);
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a3cf62', EndColorStr='#82b34e');
+      }
+      .ui-button {
+          display: inline-block;
+          text-align: center;
+          padding: 4px 20px 0px 20px;
+          box-sizing: border-box;
+          font-size: 1.2rem;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          height: 40px;
+          min-width: 170px;
+          cursor: pointer;
+          border: none;
+          color: white;
+      }
+      .ui-button a, .ui-button div {
+          font-size: 1.2rem;
+          color: white;
+          -webkit-font-smoothing: antialiased;
+          -webkit-backface-visibility: hidden;
+      }
+
+      .ui-button:hover {
+          background-color: #68903e;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#8cc33b), to(#68903e));
+          background-image: -webkit-linear-gradient(top, #8cc33b, #68903e);
+          background-image: -moz-linear-gradient(top, #8cc33b, #68903e);
+          background-image: -ms-linear-gradient(top, #8cc33b, #68903e);
+          background-image: -o-linear-gradient(top, #8cc33b, #68903e);
+          background-image: linear-gradient(top, #8cc33b, #68903e);
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#8cc33b', EndColorStr='#68903e');
+      }
+  </style>
+</head>
+<body>
+<!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
+
+<header class="page-header" role="banner">
+  <div class="page-header__container">
+    <div class="header__subnav">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="https://bravotran.workable.com">Jobs</a>
+    </div>
+
+    <h1 class="project-name">
+      <a href="/">
+        <img id="logo" src="/assets/img/bravotran-logo.svg"</img> Engineering
+      </a>
+    </h1>
+  </div>
+</header>
+
+<main id="content" class="main-content" role="main">
+
+  <div class="ht-main-content">
+    <div class="card">
+      <h2>Coding Challenge</h2>
+      <p>
+        You have been selected for the BravoTran coding challenge. You will have one hour to complete this challenge in the language of your choice. We recommend having a local development environment ready and configured to read and write JSON files. Before requesting the code, please make sure you are ready to start.
+      </p>
+      <p>
+      <form method="post" action="https://www.bravotran.com/challenge_entries">
+
+        <label>
+          Your email address:
+          <input type="email" name="email" />
+        </label>
+        <p>
+          <input type="submit" class="ui-button green" value="Get Started" />
+          <input type="hidden" name="next" value="https://engineering.bravotran.com/challenge_requested" />
+        </p>
+      </form>
+      </p>
+    </div>
+    <p><img src="/assets/img/product_graphic.png" /></p>
+
+  </div>
+</main>
+</body>
+</html>
